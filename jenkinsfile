@@ -1,0 +1,9 @@
+node('ubuntu')
+{
+    stage('git'){
+        git 'https://github.com/rajeshande430/springpetclinic.git'
+    }
+    stage('package'){
+        sh 'mvn clean package'
+    }
+}
