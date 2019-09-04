@@ -1,9 +1,9 @@
-node('u1')
+node('u4')
 {
     stage('git'){
         git 'https://github.com/rajeshande430/springpetclinic.git'
     }
-    stage('package'){
-        sh 'mvn clean package'
+    stage('compile'){
+        sh 'mvn compile'
     }
 }
