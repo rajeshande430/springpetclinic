@@ -12,4 +12,7 @@ node('u4')
     stage('package'){
         sh 'mvn package'
     }
+    stage('artifacts'){
+        archive 'target/*.jar'
+    }
 }
