@@ -9,10 +9,5 @@ node('u4')
     stage('test'){
         sh 'mvn test'
     }
-    stage('package'){
-        sh 'mvn package'
-    }
-    stage('artifacts'){
-        archive 'target/*.jar'
-    }
+    
 }
