@@ -6,4 +6,7 @@ node('u4')
     stage('compile'){
         sh 'mvn compile'
     }
+    stage('test'){
+        sh 'mvn test'
+    }
 }
