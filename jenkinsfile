@@ -1,4 +1,4 @@
-node('u4')
+node
 {
     stage('git'){
         git 'https://github.com/rajeshande430/springpetclinic.git'
